@@ -1,0 +1,7 @@
+.item-component {
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px;
+  background-color: rgb(151, 83, 80);
+  text-align: center;
+}
