@@ -19,6 +19,9 @@ export class PlaygroundComponent implements OnInit {
     return 'My name is ' + this.me.name + ' and I am a ' + this.me.ocupation + '.';
   }
 
+  ngOnInit() {
+  }
+
 }
 
 class Dog {
