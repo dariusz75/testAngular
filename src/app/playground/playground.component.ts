@@ -9,25 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class PlaygroundComponent implements OnInit {
 
   title = 'Playground';
-  pi = Math.PI;
-  date = new Date();
-
-  dog = new Dog('Morgan', 11);
-  me = new Person('Dariusz', 'Front End Developer');
-
-  showMe() {
-    return 'My name is ' + this.me.name + ' and I am a ' + this.me.ocupation + '.';
-  }
+  days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  dogs = [{ name: 'Morgan', age: 2 }, { name: 'Guiness', age: 4 }, { name: 'Rex', age: 6 }];
 
   ngOnInit() {
   }
 
 }
 
-class Dog {
-  constructor(public name: string, public age: number) { }
-}
 
-class Person {
-  constructor(public name: string, public ocupation: string) { }
-}
