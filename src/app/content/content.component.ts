@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-content',
-  template: `<app-item></app-item> <app-item></app-item> <app-item></app-item> <app-item></app-item>`,
+  templateUrl: './content.component.html',
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
@@ -15,3 +15,5 @@ export class ContentComponent implements OnInit {
   }
 
 }
+
+
