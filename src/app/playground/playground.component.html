@@ -1,15 +1,13 @@
 <div class="playground-component">
   <h3> This is {{title | uppercase}} Component </h3>
-  <p>Even days of week:</p>
-  <ul *ngFor="let day of days; let e = even">
-    <li *ngIf="e">
-      {{day}}
-    </li>
-  </ul>
-  <p>Odd days of week:</p>
+  <p>Opening days:</p>
   <ul *ngFor="let day of days; let e = odd">
-    <li *ngIf="e">
+    <li *ngIf="e; else closed">
       {{day}}
     </li>
   </ul>
 </div>
+
+<ng-template #closed>
+  <li>CLOSED</li>
+</ng-template>
