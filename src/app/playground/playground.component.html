@@ -1,14 +1,15 @@
 <div class="playground-component">
   <h3> This is {{title | uppercase}} Component </h3>
-  <p>Days of week:</p>
-  <ul>
-    <li *ngFor="let day of days">
+  <p>Even days of week:</p>
+  <ul *ngFor="let day of days; let e = even">
+    <li *ngIf="e">
       {{day}}
     </li>
   </ul>
-  <ul>
-    <li *ngFor="let dog of dogs">
-      Dog's name is {{dog.name}} and it's {{dog.age}} years old.
+  <p>Odd days of week:</p>
+  <ul *ngFor="let day of days; let e = odd">
+    <li *ngIf="e">
+      {{day}}
     </li>
   </ul>
 </div>
