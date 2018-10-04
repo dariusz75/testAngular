@@ -9,22 +9,36 @@ import { Component, OnInit } from '@angular/core';
 export class PlaygroundComponent implements OnInit {
 
   title = 'Playground';
-  subtitle = 'Property binding';
+  subtitle = 'Event binding';
   inputText = 'Max 5 characters';
   buttonText = 'Change';
   maxLength = 5;
   colorClass = 'color';
   logoUrl = '';
+  x = '';
+  y = '';
 
   isDisabled = false;
 
-  change() {
-    this.inputText = 'Max 10 characters';
-    this.buttonText = 'Changed';
-    this.maxLength = 10;
+  onFocus() {
     this.colorClass = 'color2';
-    this.logoUrl = 'https://angular.io/assets/images/logos/angular/angular.png';
-    this.isDisabled = true;
+  }
+
+  onDblClick() {
+    this.colorClass = 'color3';
+  }
+
+  onPaste() {
+    this.colorClass = 'color4';
+  }
+
+  onCopy() {
+    this.colorClass = 'color';
+  }
+
+  onMouseMove(event) {
+    this.x = event.clientX;
+    this.y = event.clientY;
   }
 
   ngOnInit() {

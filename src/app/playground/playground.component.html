@@ -1,8 +1,14 @@
-<div class="playground-component">
+<div class="playground-component" (mousemove)="onMouseMove($event)">
   <h3> This is {{title | uppercase}} Component </h3>
   <h4 [className]="colorClass">{{ subtitle }}</h4>
-  <input [maxLength]="maxLength" [value]="inputText">
-  <img [src]="logoUrl">
-
-  <button [disabled]="isDisabled" (click)="change()">{{buttonText}}</button>
+  <input (focus)="onFocus()" placeholder="onFocus">
+  <br>
+  <input (dblclick)="onDblClick()" placeholder="onDblClick">
+  <br>
+  <input (paste)="onPaste()" placeholder="onPaste">
+  <br>
+  <input (copy)="onCopy()" value="copy me">
+  <br>
+  <p>X: {{x}}</p>
+  <p>Y: {{y}}</p>
 </div>
