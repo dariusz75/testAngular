@@ -1,15 +1,8 @@
 <div class="playground-component">
   <h3> This is {{title | uppercase}} Component </h3>
-  <p>Week days in German:</p>
-  <div *ngFor="let day of days">
-    <ul [ngSwitch]="day">
-      <li *ngSwitchCase="'Monday'">Montag</li>
-      <li *ngSwitchCase="'Tuesday'">Dienstag</li>
-      <li *ngSwitchCase="'Wednesday'">Mittwoch</li>
-      <li *ngSwitchCase="'Thursday'">Donnerstag</li>
-      <li *ngSwitchCase="'Friday'">Freitag</li>
-      <li *ngSwitchCase="'Saturday'">Samstag</li>
-      <li *ngSwitchCase="'Sunday'">Sonntag</li>
-    </ul>
-  </div>
+  <h4 [className]="colorClass">{{ subtitle }}</h4>
+  <input [maxLength]="maxLength" [value]="inputText">
+  <img [src]="logoUrl">
+
+  <button [disabled]="isDisabled" (click)="change()">{{buttonText}}</button>
 </div>
