@@ -1,14 +1,7 @@
-<div class="playground-component" (mousemove)="onMouseMove($event)">
+<div class="playground-component">
   <h3> This is {{title | uppercase}} Component </h3>
-  <h4 [className]="colorClass">{{ subtitle }}</h4>
-  <input (focus)="onFocus()" placeholder="onFocus">
-  <br>
-  <input (dblclick)="onDblClick()" placeholder="onDblClick">
-  <br>
-  <input (paste)="onPaste()" placeholder="onPaste">
-  <br>
-  <input (copy)="onCopy()" value="copy me">
-  <br>
-  <p>X: {{x}}</p>
-  <p>Y: {{y}}</p>
+  <h4>{{ subtitle }}</h4>
+  <p>My name is {{name}} and I am {{occupation}}.</p>
+  <input [value]="name" (input)="saveName($event)">
+  <input [value]="occupation" (input)="saveOccupation($event)">
 </div>
