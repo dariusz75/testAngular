@@ -10,18 +10,10 @@ export class PlaygroundComponent implements OnInit {
 
   title = 'Playground';
   subtitle = 'Property and Event binding';
-  name = 'ww';
-  occupation = 'ee';
+  name = '';
+  occupation = '';
 
 
-  saveName(event) {
-    this.name = event.target.value;
-
-  }
-
-  saveOccupation(event) {
-    this.occupation = event.target.value;
-  }
 
   ngOnInit() {
   }

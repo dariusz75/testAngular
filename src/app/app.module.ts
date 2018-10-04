@@ -8,6 +8,7 @@ import { ContentComponent } from './content/content.component';
 import { ItemComponent } from './item/item.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlaygroundComponent } from './playground/playground.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PlaygroundComponent } from './playground/playground.component';
     PlaygroundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
