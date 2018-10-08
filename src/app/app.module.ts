@@ -9,6 +9,7 @@ import { ItemComponent } from './item/item.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlaygroundComponent } from './playground/playground.component';
 import { FormsModule } from '@angular/forms';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     ContentComponent,
     ItemComponent,
     FooterComponent,
-    PlaygroundComponent
+    PlaygroundComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
