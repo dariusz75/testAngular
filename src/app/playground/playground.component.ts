@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class PlaygroundComponent implements OnInit {
 
   title = 'Playground';
-  subtitle = 'Sending data to component - @input';
+  subtitle = 'Sending data to child component - @input';
 
   tasksList = ['task 1', 'task 2', 'task 3', 'task 4'];
 
